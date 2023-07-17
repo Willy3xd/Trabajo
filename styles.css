@@ -1,0 +1,44 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+.turntable {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 50%;
+  animation: rotate 8s infinite linear;
+}
+
+.record {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background-image: url("Disco.png");
+  background-size: cover;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+input[type="range"] {
+  width: 200px;
+  margin-top: 20px;
+}
